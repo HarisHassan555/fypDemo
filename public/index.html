@@ -29,12 +29,14 @@
 
 <body>
   <a-scene embedded arjs>
+    <a-assets>
+      <a-asset-item id="gltf-model" src="/residential/scene.gltf"></a-asset-item>
+    </a-assets>
     <a-marker type="pattern"
       url="https://raw.githubusercontent.com/flippedcoder/blog-examples/main/clear-world/pattern-check.patt">
-      <a-entity
-        gltf-model="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf"
-        scale="0.5 0.5 0.5" position="0 0 0" rotation="0 0 0">
-      </a-entity>
+      <a-gltf-model src="#gltf-model"
+        scale="1 1 1" position="0 0 0" rotation="0 0 0">
+      </a-gltf-model>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
@@ -43,22 +45,21 @@
   </noscript>
   <div id="root"></div>
   <iframe
-  src="https://www.chatbase.co/chatbot-iframe/o2V33Y8riGSuHDl2jzOk_"
-  width="100%"
-  style="height: 100%; min-height: 700px"
-  frameborder="0"
-  ></iframe>
-</body>
+src="https://www.chatbase.co/chatbot-iframe/34JNfd71BSHLTGumAuP-o"
+width="100%"
+style="height: 100%; min-height: 700px"
+frameborder="0"
+></iframe>
 <script>
-  window.embeddedChatbotConfig = {
-  chatbotId: "o2V33Y8riGSuHDl2jzOk_",
-  domain: "www.chatbase.co"
-  }
-  </script>
-  <script
-  src="https://www.chatbase.co/embed.min.js"
-  chatbotId="o2V33Y8riGSuHDl2jzOk_"
-  domain="www.chatbase.co"
-  defer>
-  </script>
+window.embeddedChatbotConfig = {
+chatbotId: "34JNfd71BSHLTGumAuP-o",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="34JNfd71BSHLTGumAuP-o"
+domain="www.chatbase.co"
+defer>
+</script>
 </html>
